@@ -1,0 +1,55 @@
+apiVersion: v1
+entries:
+  rancher-vsphere-cpi:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: vSphere CPI
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/rancher-version: '>= 2.6.0-0 <= 2.6.99-0'
+      catalog.cattle.io/release-name: vsphere-cpi
+    apiVersion: v1
+    appVersion: 1.0.1
+    created: "2022-01-18T18:49:17.189329903Z"
+    description: vSphere Cloud Provider Interface (CPI)
+    digest: 0ea9a188155878fe7306dfafc23b1a282e03f579fe78cc5603a2a12180872f85
+    icon: https://charts.rancher.io/assets/logos/vsphere-cpi.svg
+    keywords:
+    - infrastructure
+    kubeVersion: 1.18 - 1.21
+    maintainers:
+    - email: caleb@rancher.com
+      name: Rancher
+    name: rancher-vsphere-cpi
+    sources:
+    - https://github.com/kubernetes/cloud-provider-vsphere
+    urls:
+    - https://github.com/rayandas/vsphere-charts-1/releases/download/rancher-vsphere-cpi-1.0.100/rancher-vsphere-cpi-1.0.100.tgz
+    version: 1.0.100
+  rancher-vsphere-csi:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: vSphere CSI
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/rancher-version: '>= 2.6.0-0 <= 2.6.99-0'
+      catalog.cattle.io/release-name: vsphere-csi
+    apiVersion: v1
+    appVersion: 2.3.0
+    created: "2022-01-18T18:49:17.382275478Z"
+    description: vSphere Cloud Storage Interface (CSI)
+    digest: bb296238acc409d913aa29f1ee3146d694138d01533cd79734c04ff806eedfcc
+    icon: https://charts.rancher.io/assets/logos/vsphere-csi.svg
+    keywords:
+    - infrastructure
+    kubeVersion: 1.19 - 1.21
+    maintainers:
+    - email: caleb@rancher.com
+      name: Rancher
+    name: rancher-vsphere-csi
+    sources:
+    - https://github.com/kubernetes-sigs/vsphere-csi-driver
+    urls:
+    - https://github.com/rayandas/vsphere-charts-1/releases/download/rancher-vsphere-csi-2.3.0/rancher-vsphere-csi-2.3.0.tgz
+    version: 2.3.0
+generated: "2022-01-18T18:49:17.382282378Z"
