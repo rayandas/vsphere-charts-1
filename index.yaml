@@ -26,6 +26,30 @@ entries:
     urls:
     - https://github.com/rayandas/vsphere-charts-1/releases/download/rancher-vsphere-cpi-1.0.100/rancher-vsphere-cpi-1.0.100.tgz
     version: 1.0.100
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: vSphere CPI
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/release-name: vsphere-cpi
+    apiVersion: v1
+    appVersion: 1.21.0
+    created: "2022-01-28T08:51:01.266239289Z"
+    description: vSphere Cloud Provider Interface (CPI)
+    digest: dc874b03bc70d40e03b91725273dba55c3a02e5a1872b8659df21e61b2dc9654
+    icon: https://charts.rancher.io/assets/logos/vsphere-cpi.svg
+    keywords:
+    - infrastructure
+    kubeVersion: 1.18 - 1.21
+    maintainers:
+    - email: caleb@rancher.com
+      name: Rancher
+    name: rancher-vsphere-cpi
+    sources:
+    - https://github.com/kubernetes/cloud-provider-vsphere
+    urls:
+    - https://github.com/rayandas/vsphere-charts-1/releases/download/rancher-vsphere-cpi-1.0.100-rancher1/rancher-vsphere-cpi-1.0.100-rancher1.tgz
+    version: 1.0.100-rancher1
   rancher-vsphere-csi:
   - annotations:
       catalog.cattle.io/certified: rancher
@@ -52,4 +76,29 @@ entries:
     urls:
     - https://github.com/rayandas/vsphere-charts-1/releases/download/rancher-vsphere-csi-2.3.0/rancher-vsphere-csi-2.3.0.tgz
     version: 2.3.0
-generated: "2022-01-18T18:49:17.382282378Z"
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: vSphere CSI
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/rancher-version: '>= 2.5.0-0 <= 2.5.99-0'
+      catalog.cattle.io/release-name: vsphere-csi
+    apiVersion: v1
+    appVersion: 2.3.1
+    created: "2022-01-28T08:51:01.566569178Z"
+    description: vSphere Cloud Storage Interface (CSI)
+    digest: ff0b7e6b54816c114bb23ed168b324beb9716b10f8a2f437418f601600b82c7a
+    icon: https://charts.rancher.io/assets/logos/vsphere-csi.svg
+    keywords:
+    - infrastructure
+    kubeVersion: 1.19 - 1.21
+    maintainers:
+    - email: caleb@rancher.com
+      name: Rancher
+    name: rancher-vsphere-csi
+    sources:
+    - https://github.com/kubernetes-sigs/vsphere-csi-driver
+    urls:
+    - https://github.com/rayandas/vsphere-charts-1/releases/download/rancher-vsphere-csi-2.3.0-rancher1/rancher-vsphere-csi-2.3.0-rancher1.tgz
+    version: 2.3.0-rancher1
+generated: "2022-01-28T08:51:01.566582578Z"
